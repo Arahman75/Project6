@@ -48,8 +48,10 @@ const handleMusic = async (categoryId) => {
                     <figure><img class="h-10 w-10 rounded-full" src="${music.authors[0]?.profile_picture}" alt="thumbnail" /></figure>
                         <h2 class="text-gary-400 text-xl font-bold">${music.authors[0]?.profile_name}</h2>
                     </div>
-                    <p>${music?.title
-            } </p>
+                    <p class="flex items-center ">${music?.title
+            } 
+              <input type="checkbox" checked="checked" class="checkbox checkbox-info ml-2" />
+        </p>
                     <p>${music?.others?.views} views</p>
                   
                 </div>
